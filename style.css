@@ -22,12 +22,12 @@
     display: block;
     text-decoration: none;
     color: black;
-    max-width: 360px;
+    width: 100%;
     background-color: white;
     border: 1px solid white;
     border-radius: 9px;
     text-align: center;
-    padding: 11px 0;
+    padding: 11px 20px;
 }
 
 /* .header a:hover {
@@ -48,6 +48,10 @@
 
 .choices {
     text-align: center;
+    /* max-width: 350px; */
+}
+.choices p{
+    margin: 0 auto;
     max-width: 350px;
 }
 
@@ -63,6 +67,10 @@
     height: 10px;
     max-width: 110px;
     border-radius: 9px;
+    margin-top: 24px;
+}
+.component-container {
+    margin-bottom: 390px;
 }
 .component{
     display: flex;
@@ -104,6 +112,7 @@
     display: block;
     text-decoration: none;
     margin-bottom: 26px;
+    color: white;
 }
 
 .found-us {
@@ -126,9 +135,64 @@
 
 /* Partie responsive */ 
 
-@media screen and (max-width: 1260px)
-{
+@media screen and (min-width: 700px) {
     .container {
         max-width: 1000px;
+        margin: 0 auto;
     }
+
+    .header a {
+        display: inline-block;
+        width: auto; 
+    }
+    /* main containt */ 
+    main .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .choices {
+        max-width: 300px;
+    }
+    .choices-container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+    .component-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 49px;
+    }
+    .component {
+        border: 1px solid green;
+        /* width: 325px; */
+        justify-content: space-;
+
+    }
+
+    /* footer */ 
+
+    .footer {
+        height: 400px;
+    }
+    .footer .container{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+        flex-direction: row wrap;
+        
+    }
+    .found-us p{
+        margin-top: 15px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .component-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 49px;
+    }
+    
 }
