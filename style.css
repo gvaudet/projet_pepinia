@@ -1,4 +1,5 @@
 
+
 .header {
     height: 464px;
     background-color: #472F88;
@@ -46,7 +47,7 @@
     text-align: justify;
 }
 
-/* main */ 
+/* -----------------------------------------main ---------------------------*/ 
 
 .choices {
     text-align: center;
@@ -113,7 +114,7 @@
     background-image: url(./assets/images/nos_services.png);
 }
 
-/* footer */ 
+/* -----------------------------------footer ------------------------------*/ 
 
 .footer {
     width: 100%;
@@ -146,9 +147,24 @@
     margin-bottom: 8px;
 }
 
+/* ------------------------------Page Pepinière ---------------------------------*/
+.container-2 {
+    max-width: 1120px;
+    padding: 109px 25px 33px 25px;
+    border: 1px solid yellow;
 
-/* Partie responsive */ 
+}
+.navbar {
+    border: 1px solid red;
+    height: 82px;
+    width: 100%;
+    box-shadow: 0px 16px 14px 0px rgba(0,0,0,0.20);
+}
 
+
+/* -------------------------------Partie responsive ---------------------------*/
+
+/* -------------------------------Index ---------------------------------------*/
 @media screen and (min-width: 700px) {
     .container {
         max-width: 1000px;
