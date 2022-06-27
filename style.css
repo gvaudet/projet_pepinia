@@ -85,7 +85,14 @@
     background-size: cover;
     border-radius: 9px;
 }
-
+.component-container a {
+    text-decoration: none;
+    color: white;
+}
+.component-container a:visited {
+    text-decoration: none;
+    color: white;
+}
 .component:hover {
     box-shadow: 5px 8px 0px 5px #472F88;
     transition: 0.5s;
