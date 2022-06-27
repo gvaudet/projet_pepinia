@@ -186,8 +186,8 @@
     } */
     .footer .container{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: start;
 
     }
 }
@@ -197,6 +197,12 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 49px;
+    }
+
+    .footer .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: start;
     }
     
 }
