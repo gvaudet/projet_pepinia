@@ -37,7 +37,6 @@
 
 .container {
     max-width: 1120px;
-    /* border: 1px solid red; */
     padding: 109px 25px 33px 25px;
 }
 
@@ -54,28 +53,82 @@
 
 /* pour le choices p voir pour la même mise en page que sur la maquette  */ 
 .separate {
-    margin: 127px 0 45px 0;
+    margin-top: 127px;
 }
-.separate hr {
+
+.separate h2::after {
+    content: "";
+    display: block;
     background-color: #472F88;
     height: 10px;
     max-width: 110px;
     border-radius: 9px;
 }
-.components{
+.component{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
-    text-indent: 10%;
     line-height: 37px;
-    
     height: 321px;
     color: white;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.components-1{
-    background: url(./assets/images/pepinieres_d_entreprise.png);
+.component-1{
+    background-image: url(./assets/images/pepinieres_d_entreprise.png);
+    text-indent: 10%;
 }
-.components-2{
-    background: url(./assets/images/residents.png);
+.component-2{
+    background-image: url(./assets/images/fablab.png);
+}
+.component-3{
+    background-image: url(./assets/images/residents.png);
+}
+.component-4{
+    background-image: url(./assets/images/nos_services.png);
+}
+
+/* footer */ 
+
+.footer {
+    background-color: #472F88;
+    height: 700px;
+    color: white;
+}
+
+.about h2 {
+    margin-bottom: 34px;
+}
+.about a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 26px;
+}
+
+.found-us {
+    margin-top: 68px;
+}
+.found-us p{
+    margin-top: 38px;
+    line-height: 30px;
+}
+
+.legal {
+    margin-top: 68px;
+}
+.legal a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* Partie responsive */ 
+
+@media screen and (max-width: 1260px)
+{
+    .container {
+        max-width: 1000px;
+    }
 }
